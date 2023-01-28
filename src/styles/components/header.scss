@@ -1,0 +1,43 @@
+@import '../includes/main';
+
+.header {
+	.header__appBar {
+		background-color: $white-color;
+		color: $black-color;
+	}
+}
+.header__logo {
+	text-transform: uppercase;
+	@include franklin-bold;
+	letter-spacing: 1px;
+}
+.nav-link {
+	&.active {
+		.nav-link__item {
+			@include franklin-bold;
+			span {
+				@include franklin-bold;
+			}
+		}
+	}
+	.nav-link__item {
+		@include franklin-link-regular;
+		color: $black-color;
+		text-transform: capitalize;
+		span {
+			@include franklin-link-regular;
+			color: $black-color;
+			text-transform: capitalize;
+		}
+	}
+}
+.add-post {
+	.add-post__button {
+		@include franklin-link-regular;
+		color: $black-color;
+	}
+}
+.add-post__modal-button {
+	border: none;
+	background-color: transparent;
+}

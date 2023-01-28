@@ -1,0 +1,13 @@
+// Media >= 768px
+@media (min-width: 768px) {
+}
+// Media >= 992px
+@media (min-width: 992px) {
+}
+// Media >= 1220px
+@media (min-width: 1220px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

@@ -1,0 +1,58 @@
+// Color
+$category-color: #999999;
+$description-color: #666666;
+$black-color: #000000;
+$white-color: #FFFFFF;
+$header-border-color: #E6E6E6;
+$valid-form-color: green;
+$invalid-form-color: red;
+
+// Fonts
+@mixin franklin-regular {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 400;
+}
+@mixin franklin-bold {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
+}
+@mixin tenor-regular {
+	font-family: 'Tenor Sans', sans-serif;
+}
+@mixin franklin-category-regular {
+	@include franklin-regular;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: calc(12 / 10 * 100%);
+	color: $category-color;
+}
+@mixin franklin-author-bold {
+	@include franklin-bold;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: calc(12 / 10 * 100%);
+	color: $black-color;
+}
+@mixin franklin-link-regular {
+	@include franklin-regular;
+	font-size: 14px;
+	line-height: calc(24 / 14 * 100%);
+}
+@mixin tenor-title-regular {
+	@include tenor-regular;
+	font-size: 20px;
+	line-height: calc(24 / 20 * 100%);
+	color: $black-color;
+}
+@mixin tenor-slide-title-regular {
+	@include tenor-regular;
+	font-size: 36px;
+	line-height: calc(42 / 36 * 100%);
+	color: $black-color;
+}
+@mixin franklin-description-regular {
+	@include franklin-regular;
+	font-size: 16px;
+	line-height: calc(24 / 16 * 100%);
+	color: $description-color;
+}
